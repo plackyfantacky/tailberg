@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    /* main container */
+    #page {
+        @apply flex flex-col min-h-screen;
+    }
+
+    .tw-container {
+        @apply max-w-full w-full;
+
+        .tw-wrap {
+            @apply mx-auto px-4;
+        }
+    }
+
+    /* header */
+    header {
+
+        .site-logo {
+            @apply py-4 px-16 bg-slate-300 border border-dashed border-black;
+        }
+    }
+    /* body */
+    main {
+
+    }
+
+
+}

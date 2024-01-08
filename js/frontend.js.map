@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../resources/js/frontend.js"],
+  "sourcesContent": ["// Navigation toggle\nwindow.addEventListener('load', function () {\n      let main_navigation = document.querySelector('#primary-menu');\n      document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {\n            e.preventDefault();\n            main_navigation.classList.toggle('hidden');\n      });\n});\n"],
+  "mappings": ";;AACA,SAAO,iBAAiB,QAAQ,WAAY;AACtC,QAAI,kBAAkB,SAAS,cAAc,eAAe;AAC5D,aAAS,cAAc,sBAAsB,EAAE,iBAAiB,SAAS,SAAU,GAAG;AAChF,QAAE,eAAe;AACjB,sBAAgB,UAAU,OAAO,QAAQ;AAAA,IAC/C,CAAC;AAAA,EACP,CAAC;",
+  "names": []
+}

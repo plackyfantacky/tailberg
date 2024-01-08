@@ -1,0 +1,29 @@
+<div id="page" class="min-h-screen flex flex-col justify-between">
+    <!-- wp:template-part { "slug":"header", "tagName":"header","className":"tw-container bg-white" } /-->
+    <!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+        <main id="content" class="tw-container flex-grow">
+            <!-- wp:query -->
+                <div class="wp-block-query">
+                    <!-- wp:post-template -->
+
+                        <!-- wp:post-featured-image /-->
+                        <!-- wp:post-title {"isLink":true} /-->
+                        <!-- wp:post-author {"showAvatar":false} /-->
+                        <!-- wp:post-date /-->
+                        <!-- wp:post-excerpt /-->
+                        <!-- wp:post-terms {"term":"category"} /-->
+
+                    <!-- /wp:post-template -->
+
+                    <!-- wp:query-pagination -->
+                        <div class="wp-block-query-pagination">
+                            <!-- wp:query-pagination-previous /-->
+                            <!-- wp:query-pagination-next /-->
+                        </div>
+                    <!-- /wp:query-pagination -->
+                </div>
+            <!-- /wp:query -->
+        </main>
+    <!-- /wp:group -->
+    <!-- wp:template-part { "slug":"footer", "tagName":"footer","className":"flex justify-center py-8 bg-slate-200" } /-->
+</div>

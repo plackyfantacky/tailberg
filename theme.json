@@ -1,0 +1,14 @@
+{
+    "version": "2",
+    "settings": {
+        "layout": {
+            "contentSize": "1140px",
+            "wideSize": "1536px"
+        }
+    },
+    "styles": {
+        "blocks": {
+            
+        }
+    }
+}

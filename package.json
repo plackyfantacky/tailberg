@@ -1,0 +1,39 @@
+{
+    "name": "twordle",
+    "version": "1.0.0",
+    "description": "",
+    "main": "tailwind.config.js",
+    "scripts": {
+        "dev:css-frontend": "npx tailwindcss -i ./resources/css/frontend.css -o ./css/frontend.css",
+        "dev:css-admin": "npx tailwindcss -i ./resources/css/admin.css -o ./css/admin.css",
+        "dev:js": "node esbuild/esbuild.config.mjs",
+        "dev:css": "concurrently \"npm run dev:css-frontend\" \"npm run dev:css-admin\"",
+        "dev": "concurrently \"npm run dev:css\" \"npm run dev:js\"",
+        "watch:css-frontend": "npx tailwindcss -i ./resources/css/frontend.css -o ./css/frontend.css --watch",
+        "watch:css-admin": "npx tailwindcss -i ./resources/css/admin.css -o ./css/admin.css --watch",
+        "watch:js": "node esbuild/esbuild.config.mjs --watch",
+        "watch:css": "concurrently \"npm run watch:css-frontend\" \"npm run watch:css-admin\"",
+        "watch": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
+        "sync": "browser-sync start --proxy \"testbench.word\"  --host \"testbench.word\" --no-inject-changes --files=\"./\"",
+        "watch:sync": "concurrently \"npm run watch\" \"npm run sync\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/container-queries": "^0.1.1",
+        "@tailwindcss/typography": "^0.5.10",
+        "autoprefixer": "^10.4.16",
+        "browser-sync": "^3.0.2",
+        "concurrently": "^8.2.2",
+        "cross-env": "^7.0.3",
+        "esbuild": "^0.19.11",
+        "postcss": "^8.4.32",
+        "postcss-import": "^15.1.0",
+        "postcss-nested": "^6.0.1",
+        "postcss-nested-ancestors": "^3.0.0",
+        "resolve-url-loader": "^5.0.0",
+        "tailwindcss": "^3.4.0",
+        "tailwindcss-debug-screens": "^2.2.1"
+    }
+}
