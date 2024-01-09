@@ -1,8 +1,8 @@
 {
-    "name": "twordle",
+    "name": "tailberg",
     "version": "1.0.0",
     "description": "",
-    "main": "tailwind.config.js",
+    "main": "theme.json",
     "scripts": {
         "dev:css-frontend": "npx tailwindcss -i ./resources/css/frontend.css -o ./css/frontend.css",
         "dev:css-admin": "npx tailwindcss -i ./resources/css/admin.css -o ./css/admin.css",
